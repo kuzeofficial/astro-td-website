@@ -7,7 +7,7 @@
         "@/layouts/*": ["layouts/*"],
         "@/components/*": ["components/*"],
         "@/helpers/*": ["helpers/*"],
-        "@/tests/*": ["tests/*"]
+        "@/assets/*": ["assets/*"]
     },
   }
 }
