@@ -12,6 +12,8 @@ yarn-error.log*
 pnpm-debug.log*
 
 
+.vscode
+
 # environment variables
 .env
 .env.production
