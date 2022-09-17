@@ -1,0 +1,16 @@
+---
+export interface Props {
+	text: string;
+	emoji: string;
+	href: string;
+}
+
+const { href, emoji, text } = Astro.props;
+---
+
+<a href={href} class="my-1.5 dark:bg-[#333] dark:hover:bg-[#444] bg-[#eee] hover:bg-[#ddd] w-full px-5 py-2.5 rounded-lg text-center transition-all duration-200">
+  <span class="dark:text-white text-black">
+    <span class="mr-2.5"> {emoji} </span>
+    {text}
+  </span>
+</a>
