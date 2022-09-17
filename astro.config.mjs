@@ -6,7 +6,13 @@ import react from "@astrojs/react";
 
 import mdx from "@astrojs/mdx";
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), prefetch(), robotsTxt(), react(), mdx()]
+  
+  site: process.env.DOMAIN_URL || '',
+  experimental: {
+    integrations: true
+  },
+  integrations: [tailwind(), prefetch({
+    throttle: 3
+  }), robotsTxt(), react(), mdx()]
 });
