@@ -4,7 +4,9 @@ import robotsTxt from 'astro-robots-txt';
 import prefetch from "@astrojs/prefetch";
 import react from "@astrojs/react";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), prefetch(), robotsTxt(), react()]
+  integrations: [tailwind(), prefetch(), robotsTxt(), react(), mdx()]
 });
