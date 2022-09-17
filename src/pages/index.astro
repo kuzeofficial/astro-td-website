@@ -1,15 +1,11 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import cristianFonsecaImage from '@/assets/cristian_fonseca.jpeg';
+import Header from '@/components/astro/Header.astro';
 ---
 
 <Layout title="Cristian Fonseca">
 	<main class="pt-20 items-center flex flex-col px-4 w-screen">
-		<div class="w-full flex flex-col items-center text-center">
-			<img src={cristianFonsecaImage} class="mb-2.5 rounded-full w-24 h-24" alt="Image of the owner of the page Cristian Fonseca, with glasses and a white tshirt"/>
-			<h1 class="text-3xl font-black dark:text-white text-black">Cristian Fonseca</h1>
-			<p class="m-4 text-base dark:text-white text-black">Welcome to my site!</p>
-		</div>
+		<Header />
 	</main>
 </Layout>
 
