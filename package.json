@@ -16,5 +16,8 @@
     "@astrojs/tailwind": "^2.0.1",
     "astro": "^1.2.6",
     "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "astro-robots-txt": "^0.3.9"
   }
 }
