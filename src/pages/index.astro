@@ -6,6 +6,9 @@ import SectionInformation from '@/components/astro/SectionInformation.astro';
 import SectionListItem from '@/components/astro/SectionListItem.astro';
 import SectionListItemLink from '@/components/astro/SectionListItemLink.astro';
 import { FormEmail } from '@/components/react/FormEmail'
+import classNames from 'classnames'
+
+const posts = await Astro.glob('../pages/blog/posts/*.mdx');
 ---
 
 <Layout title="Cristian Fonseca">
@@ -50,6 +53,19 @@ import { FormEmail } from '@/components/react/FormEmail'
 				<p class="m-2.5 text-center dark:text-white">Get notified when I release new stuff! 👇</p>
 				<FormEmail client:visible/>
 			</div>
+		</div>
+		<div id="blog" class="w-full flex items-center flex-col max-w-[600px]">
+			<h3 class="text-3xl font-bold my-5 dark:text-white">Latest Posts✨</h3>
+				{posts.map((post) => (
+					<a href={post.url} rel="prefetch"  class="my-5 w-full hover:bg-[#f7f7f7] dark:hover:bg-[#222] rounded px-2 py-2">
+						<div class="w-full flex justify-between">
+							<chip class={classNames(`${post.frontmatter.colorTag} rounded-full font-bold px-2 text-white text-sm flex items-center`)}>{post.frontmatter.tags}</chip>
+							<span class="text-[#888] text-xs font-bold">{post.frontmatter.pubDate}</span>
+						</div>
+						<h4 class="text-xl font-bold my-1 dark:text-white text-black">{post.frontmatter.title}</h4>
+						<span class="text-[#888]  w-full text-sm">{post.frontmatter.description}</span>
+					</a>
+				))}
 		</div>
 	</main>
 </Layout>
