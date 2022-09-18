@@ -1,17 +1,19 @@
 ---
-import Layout from '@/layouts/Layout.astro';
-import Header from '@/components/astro/Header.astro';
+import type { Frontmatter } from 'types/Frontmatter';
+import SEOImage from '@/assets/SEO.png'
+import SectionListItemLink from '@/components/astro/SectionListItemLink.astro';
+import SectionListItem from '@/components/astro/SectionListItem.astro';
 import SectionLink from '@/components/astro/SectionLink.astro'
 import SectionInformation from '@/components/astro/SectionInformation.astro';
-import SectionListItem from '@/components/astro/SectionListItem.astro';
-import SectionListItemLink from '@/components/astro/SectionListItemLink.astro';
-import { FormEmail } from '@/components/react/FormEmail'
 import PostCard from '@/components/astro/PostCard.astro';
-import type { Frontmatter } from 'types/Frontmatter';
+import Layout from '@/layouts/Layout.astro';
+import Header from '@/components/astro/Header.astro';
+import { FormEmail } from '@/components/react/FormEmail'
+
 const posts = await Astro.glob<Frontmatter>('../pages/blog/posts/*.mdx');
 ---
 
-<Layout title="Cristian Fonseca">
+<Layout title="Cristian Fonseca" image={SEOImage} description="Software Engineer working on Evaluar, and founder of Devlarket">
 	<main class="pt-20 items-center flex flex-col px-4 w-screen">
 		<Header />
 		<section class="flex items-center max-w-[330px] mb-8 flex-col">
