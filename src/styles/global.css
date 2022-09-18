@@ -1,0 +1,32 @@
+
+h2 {
+  @apply text-2xl;
+  @apply font-bold
+}
+strong {
+  @apply font-black;
+  @apply text-lg
+}
+p {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  @apply text-gray-600;
+  @apply dark:text-gray-400
+}
+pre {
+  @apply px-4;
+  @apply bg-[#eeeded] !important;
+  @apply bg-[#222] !important;
+  @apply w-full;
+  @apply rounded-md;
+}
+code {
+  @apply bg-[#eeeded];
+  @apply px-2;
+  @apply rounded-md;
+  @apply py-0.5;
+  @apply bg-[#222]
+}
+a {
+  @apply text-blue-400
+}
