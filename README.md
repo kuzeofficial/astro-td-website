@@ -1,35 +1,42 @@
-# Welcome to [Astro](https://astro.build)
+# Personal website and blog with [Astro](https://astro.build/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+## FAQ
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+> 🛠 **What tools does this project use?** 90% Astro 🚀 and  10% React ⚛!
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+> 🧑‍🚀 **What files can i replace?** You can replace and modify the project as much as you want, ideally you should change assets and texts to take advantage of the optimization done, but if you want to customize something else feel free to do so.!
+
+> 🖤 **Where is the design copied from?** from [Tony Dinh Website](https://tonydinh.com/).!
+
+## Notes:
+> 🏅 If you find a bug or want to make a PR with new features or fixes, feel free to do so.
 
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
 
 ```
 /
 ├── public/
 │   └── favicon.svg
 ├── src/
+|   ├── assets/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── astro/
+|   |   |   └── ... Components.astro
+|   |   ├── react/
+|   |   |   └── ... Components.tsx
+|   |   ├── markdown/
+|   |   |   └── ... Image.tsx
 │   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
+│   │   ├── Layout.astro
+│   ├── pages/
+│   |    └── index.astro
+|   ├── style/
+|   └── hooks/
+|       └── useEmailForm.ts
 └── package.json
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -44,6 +51,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `npm run astro --help` | Get help using the Astro CLI                       |
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## ⭐️ Leave your star and fork the repo if you feel like it
+### Follow me:
+ [Twitter](https://twitter.com/cristian_devk)
