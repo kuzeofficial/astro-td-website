@@ -4,6 +4,7 @@ import Header from '@/components/astro/Header.astro';
 import SectionLink from '@/components/astro/SectionLink.astro'
 import SectionInformation from '@/components/astro/SectionInformation.astro';
 import SectionListItem from '@/components/astro/SectionListItem.astro';
+import SectionListItemLink from '@/components/astro/SectionListItemLink.astro';
 ---
 
 <Layout title="Cristian Fonseca">
@@ -25,21 +26,22 @@ import SectionListItem from '@/components/astro/SectionListItem.astro';
 				<SectionListItem emoji="⚡️" text="Love rain 🌧"/>
 			</SectionInformation>
 			<SectionInformation title="Code">
-				<li class="my-2.5">
-					<div>
-						<span class="mr-1.5">📈</span>
-						<a href="#" class="dark:text-white border-b border-dashed text-black border-[#aaa]" rel="prefetch">
-							Example
-						</a>
-					</div>
-					<p class="my-0.5 text-[#555555] text-xs dark:text-[#ccc]">Description</p>
-				</li>
+				<SectionListItemLink emoji="🎒" text="Showwcase" href="https://cristian-devk.showwcase.com/" description="7 Tweets last 7 hours"/>
+				<SectionListItemLink emoji="⌨️" text="Github" href="https://github.com/kuzeofficial" description="7 Tweets last 7 hours"/>
 			</SectionInformation>
 			<SectionInformation title="Social Networks">
+				<SectionListItemLink emoji="🐦" text="Twitter" href="https://twitter.com/cristian_devk" description="7 Tweets last 7 hours"/>
+				<SectionListItemLink emoji="🌄" text="Instagram" href="https://www.instagram.com/kuze_oficial/" description="7 Tweets last 7 hours"/>
+				<SectionListItemLink emoji="💼" text="Linkedin" href="https://www.linkedin.com/in/cristian-fonseca-c-04972b224/" description="7 Tweets last 7 hours"/>
 			</SectionInformation>
 			<SectionInformation title="Writings">
+				<SectionListItemLink emoji="💌" text="Newsletter" href="#" description="Comming soon"/>
+				<SectionListItemLink emoji="📝" text="Blog" href="#blog" description="7 Tweets last 7 hours"/>
 			</SectionInformation>
 			<SectionInformation title="Others">
+				<SectionListItemLink emoji="💙" text="Devlarket" href="https://devlarket.com/" description="Cooming Soon"/>
+				<SectionListItemLink emoji="📫" text="Email" href="mailto:contact@cristianfonseca.dev" description="Only for collaboration work, please"/>
+				<SectionListItemLink emoji="💰" text="Paypal" href="https://www.paypal.com/donate/?business=XVQYEY8UFRAL2&no_recurring=0&item_name=Support+me+in+continuing+to+develop+things+that+help+and+inspire+others.&currency_code=USD" description="Support me"/>
 			</SectionInformation>
 		</div>
 	</main>

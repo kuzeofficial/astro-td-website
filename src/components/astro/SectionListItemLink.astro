@@ -1,0 +1,19 @@
+---
+export interface Props {
+	emoji: string;
+  text: string;
+  href: string;
+  description: string
+}
+
+const { emoji, text, href, description } = Astro.props;
+---
+<li class="my-2.5">
+  <div>
+    <span class="mr-1.5">{emoji}</span>
+    <a href={href} class="dark:text-white border-b border-dashed text-black border-[#aaa]" rel="prefetch">
+      {text}
+    </a>
+  </div>
+  <p class="my-0.5 text-[#555555] text-xs dark:text-[#ccc]">{description}</p>
+</li>
