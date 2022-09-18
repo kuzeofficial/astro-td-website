@@ -2,6 +2,7 @@
 import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/astro/Header.astro';
 import SectionLink from '@/components/astro/SectionLink.astro'
+import SectionInformation from '@/components/astro/SectionInformation.astro';
 ---
 
 <Layout title="Cristian Fonseca">
@@ -15,31 +16,16 @@ import SectionLink from '@/components/astro/SectionLink.astro'
 			<SectionLink emoji="🖤" text="Example text" href="#"/>
 		</section>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-			<section class="flex flex-col mx-5 max-w-[200px]">
-				<h2 class="text-2xl font-bold my-5 dark:text-white">Example</h2>
-				<ul>
-				</ul>
-			</section>
-			<section class="flex flex-col mx-5 max-w-[200px]">
-				<h2 class="text-2xl font-bold my-5 dark:text-white">Example</h2>
-				<ul>
-				</ul>
-			</section>
-			<section class="flex flex-col mx-5 max-w-[200px]">
-				<h2 class="text-2xl font-bold my-5 dark:text-white">Example</h2>
-				<ul>
-				</ul>
-			</section>
-			<section class="flex flex-col mx-5 max-w-[200px]">
-				<h2 class="text-2xl font-bold my-5 dark:text-white">Example</h2>
-				<ul>
-				</ul>
-			</section>
-			<section class="flex flex-col mx-5 max-w-[200px]">
-				<h2 class="text-2xl font-bold my-5 dark:text-white">Example</h2>
-				<ul>
-				</ul>
-			</section>
+			<SectionInformation title="About Me">
+			</SectionInformation>
+			<SectionInformation title="Code">
+			</SectionInformation>
+			<SectionInformation title="Social Networks">
+			</SectionInformation>
+			<SectionInformation title="Writings">
+			</SectionInformation>
+			<SectionInformation title="Others">
+			</SectionInformation>
 		</div>
 	</main>
 </Layout>
