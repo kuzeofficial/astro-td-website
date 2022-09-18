@@ -5,6 +5,7 @@ import SectionLink from '@/components/astro/SectionLink.astro'
 import SectionInformation from '@/components/astro/SectionInformation.astro';
 import SectionListItem from '@/components/astro/SectionListItem.astro';
 import SectionListItemLink from '@/components/astro/SectionListItemLink.astro';
+import { FormEmail } from '@/components/react/Form'
 ---
 
 <Layout title="Cristian Fonseca">
@@ -47,19 +48,7 @@ import SectionListItemLink from '@/components/astro/SectionListItemLink.astro';
 		<div class="my-10">
 			<div>
 				<p class="m-2.5 text-center dark:text-white">Get notified when I release new stuff! 👇</p>
-				<form onsubmit="" class="flex gap-2.5">
-          <input
-            type="email"
-            class="w-full dark:text-white dark:bg-[#323232] h-full p-2 text-base border-[#ccc] rounded border "
-            placeholder="Enter email"
-          />
-          <button
-            class="px-2.5 bg-[#2196f3] text-white disabled:opacity-70 font-semibold text-sm rounded"
-            type="submit"
-          >
-            Suscribe
-          </button>
-        </form>
+				<FormEmail />
 			</div>
 		</div>
 	</main>
