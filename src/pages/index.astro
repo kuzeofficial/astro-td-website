@@ -5,7 +5,7 @@ import SectionLink from '@/components/astro/SectionLink.astro'
 import SectionInformation from '@/components/astro/SectionInformation.astro';
 import SectionListItem from '@/components/astro/SectionListItem.astro';
 import SectionListItemLink from '@/components/astro/SectionListItemLink.astro';
-import { FormEmail } from '@/components/react/Form'
+import { FormEmail } from '@/components/react/FormEmail'
 ---
 
 <Layout title="Cristian Fonseca">
@@ -48,7 +48,7 @@ import { FormEmail } from '@/components/react/Form'
 		<div class="my-10">
 			<div>
 				<p class="m-2.5 text-center dark:text-white">Get notified when I release new stuff! 👇</p>
-				<FormEmail />
+				<FormEmail client:visible/>
 			</div>
 		</div>
 	</main>
