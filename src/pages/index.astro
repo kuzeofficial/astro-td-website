@@ -3,6 +3,7 @@ import Layout from '@/layouts/Layout.astro';
 import Header from '@/components/astro/Header.astro';
 import SectionLink from '@/components/astro/SectionLink.astro'
 import SectionInformation from '@/components/astro/SectionInformation.astro';
+import SectionListItem from '@/components/astro/SectionListItem.astro';
 ---
 
 <Layout title="Cristian Fonseca">
@@ -17,10 +18,11 @@ import SectionInformation from '@/components/astro/SectionInformation.astro';
 		</section>
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
 			<SectionInformation title="About Me">
-				<li class="my-2.5 dark:text-white">
-					<span class="mr-1.5">🇨🇺</span>
-					Example
-				</li>
+				<SectionListItem emoji="🙍🏻‍♂️" text="28 years old"/>
+				<SectionListItem emoji="🇧🇷" text="From Brasil"/>
+				<SectionListItem emoji="👨🏻‍💻" text="Software Developer"/>
+				<SectionListItem emoji="🔨" text="Full-time Engineer"/>
+				<SectionListItem emoji="⚡️" text="Love rain 🌧"/>
 			</SectionInformation>
 			<SectionInformation title="Code">
 			</SectionInformation>

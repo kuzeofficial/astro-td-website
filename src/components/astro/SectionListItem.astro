@@ -1,0 +1,9 @@
+---
+export interface Props {
+	emoji: string;
+  text: string;
+}
+
+const { emoji, text } = Astro.props;
+---
+<li class="my-2.5 dark:text-white"><span class="mr-1.5">{emoji}</span>{text}</li>
