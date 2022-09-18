@@ -38,6 +38,14 @@
 └── package.json
 ```
 
+
+## Optimized with dark mode included ☀️ / 🌚
+**White:**
+![CleanShot 2022-09-18 at 00 02 29](https://user-images.githubusercontent.com/65286318/190885311-883d0912-f939-4160-aa36-3a2005ce9fb3.png)
+**Dark:**
+![CleanShot 2022-09-18 at 00 03 09](https://user-images.githubusercontent.com/65286318/190885292-4065f760-1106-408b-a1af-9c28cc03cca8.png)
+
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
