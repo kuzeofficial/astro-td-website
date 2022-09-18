@@ -2,6 +2,7 @@
 import type { MarkdownLayoutProps } from 'astro';
 import cristianFonsecaImage from '@/assets/cristian_fonseca.jpeg'
 import BaseHead from '@/components/astro/BaseHead.astro';
+import '@/styles/global.css'
 type Props = MarkdownLayoutProps<{
   // Define frontmatter props here
   title: string;
@@ -14,7 +15,6 @@ type Props = MarkdownLayoutProps<{
   heroImage: string;
 }>;
 const { frontmatter } = Astro.props;
-console.log(frontmatter)
 ---
 
 <!DOCTYPE html>
