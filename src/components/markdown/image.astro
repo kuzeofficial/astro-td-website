@@ -1,0 +1,10 @@
+---
+export interface Props {
+	href: string
+  alt: string
+}
+
+const { href, alt } = Astro.props;
+---
+<img src={href} class="w-full h-full rounded-md" alt={alt} />
+<span class="text-[#555555] dark:text-[#ccc] font-thin italic text-sm">{alt}</span>
