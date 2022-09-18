@@ -1,15 +1,17 @@
 ---
 import type { MarkdownLayoutProps } from 'astro';
 import cristianFonsecaImage from '@/assets/cristian_fonseca.jpeg'
+import BaseHead from '@/components/astro/BaseHead.astro';
 type Props = MarkdownLayoutProps<{
   // Define frontmatter props here
   title: string;
   author: string;
   imageAuthor: string;
   pubDate: string;
-  url: string
-  minutesRead: string
-  heroImage: string
+  url: string;
+  description: string;
+  minutesRead: string;
+  heroImage: string;
 }>;
 const { frontmatter } = Astro.props;
 console.log(frontmatter)
@@ -17,13 +19,7 @@ console.log(frontmatter)
 
 <!DOCTYPE html>
 <html lang="en" class="no-touch">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{frontmatter.title}</title>
-	</head>
+  <BaseHead title={frontmatter.title} description={frontmatter.description} image={frontmatter.heroImage} />
 	<body class="dark:bg-[#141414] dark:text-white bg-[#fff]">
     <article class="pt-20 items-center flex flex-col mx-auto max-w-[640px] px-4">
       <a class="dark:hover:bg-[#222] dark:text-white hover:bg-[#f7f7f7] px-2 rounded py-1 text-black font-semibold" href="/">🔙 Go Back</a>
