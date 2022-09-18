@@ -1,0 +1,53 @@
+---
+import type { MarkdownLayoutProps } from 'astro';
+import cristianFonsecaImage from '@/assets/cristian_fonseca.jpeg'
+type Props = MarkdownLayoutProps<{
+  // Define frontmatter props here
+  title: string;
+  author: string;
+  imageAuthor: string;
+  pubDate: string;
+  url: string
+  minutesRead: string
+  heroImage: string
+}>;
+const { frontmatter } = Astro.props;
+console.log(frontmatter)
+---
+
+<!DOCTYPE html>
+<html lang="en" class="no-touch">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+	<body class="dark:bg-[#141414] dark:text-white bg-[#fff]">
+    <article class="pt-20 items-center flex flex-col mx-auto max-w-[640px] px-4">
+      <a class="dark:hover:bg-[#222] dark:text-white hover:bg-[#f7f7f7] px-2 rounded py-1 text-black font-semibold" href="/">🔙 Go Back</a>
+      <div class="w-full justify-between flex items-center m-5">
+        <div class="flex items-center">
+          <img src={cristianFonsecaImage} class="w-12 h-12 rounded-full border-2 border-blue-400" alt="Image of owner of the page with glasses and white tshirt"/>
+          <div class="flex flex-col items-center ml-3">
+            <span class="font-bold">{frontmatter.author}</span>
+            <p class="text-[#555555] dark:text-[#ccc] text-sm">{frontmatter.pubDate}</p>
+          </div>
+        </div>
+        <div class="text-[#555555] dark:text-[#ccc] text-xs">
+          {frontmatter.minutesRead}
+        </div>
+      </div>
+      <h1 class="text-4xl font-bold">{frontmatter.title}</h1>
+      <img src={frontmatter.heroImage} class="my-6 w-full h-full rounded" alt={frontmatter.title} />
+      <slot />
+    </article>
+	</body>
+</html>
+<style type="text/css">
+p{
+  font-size: 400rem;
+  color: red
+}
+</style>
