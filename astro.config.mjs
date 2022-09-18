@@ -8,7 +8,7 @@ import mdx from "@astrojs/mdx";
 
 export default defineConfig({
   
-  site: process.env.DOMAIN_URL,
+  site: process.env.DOMAIN_URL || 'https://new.cristianfonseca.dev',
   experimental: {
     integrations: true
   },
