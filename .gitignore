@@ -16,6 +16,12 @@ pnpm-debug.log*
 
 # environment variables
 .env
+.env.*
+
+#locks
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
 
 # macOS-specific files
 .DS_Store
